@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Item | Doe ou Troque</title>
+    <link rel="icon" href="img/icon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #f8f8f8;
+        color: #222;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5%;
+      }
+
+      nav a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #111;
+        font-weight: 500;
+      }
+
+      .sign-up {
+        background: #111;
+        color: #fff;
+        padding: 0.6rem 1.2rem;
+        border-radius: 25px;
+        text-decoration: none;
+      }
+
+      .sign-in {
+        background: blue;
+        color: #fff;
+        padding: 0.6rem 1.2rem;
+        border-radius: 25px;
+        text-decoration: none;
+      }
+
+      .container {
+        flex: 1;
+        padding: 2rem 5%;
+      }
+
+      .item-box {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .item-img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+
+      .item-info h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      .item-info p {
+        margin-bottom: 0.3rem;
+      }
+
+      .item-actions {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+      }
+
+      .item-actions button {
+        flex: 1;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .btn-doar {
+        background: #27ae60;
+        color: white;
+      }
+
+      .btn-trocar {
+        background: #2980b9;
+        color: white;
+      }
+
+      footer {
+        color: #000;
+        padding: 2rem;
+        text-align: center;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="pesquisar.html">Pesquisar</a>
+        <a href="cadastrar-item.html">Cadastrar Item</a>
+        <a href="gerenciar.html">Gerenciar</a>
+        <a href="solicitacao.html">Solicitação</a>
+        <a href="about.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html" class="sign-up">Cadastrar-se</a>
+        <a href="login.html" class="sign-in">Login</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="item-box">
+        <img src="img/exemplo-item.jpg" alt="Imagem do item" class="item-img" />
+
+        <div class="item-info">
+          <h2>Fogão 4 bocas</h2>
+          <p><strong>Tipo:</strong> Doação</p>
+          <p><strong>Categoria:</strong> Eletrodoméstico</p>
+          <p><strong>Condição:</strong> Usado</p>
+          <p><strong>Endereço:</strong> Rua das Flores, 123 - Bairro Centro</p>
+          <p>
+            <strong>Descrição:</strong> Fogão em bom estado, todas as bocas
+            funcionando. Possui alguns arranhões.
+          </p>
+          <p>
+            <strong>Observações:</strong> Preferência para retirada no local.
+          </p>
+        </div>
+
+        <div class="item-actions">
+          <button class="btn-doar">Solicitar Doação</button>
+          <button class="btn-trocar">Propor Troca</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 IntegraTech_Arapoema • Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciar Solicitações | Doe ou Troque</title>
+    <link rel="icon" href="img/icon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #f8f8f8;
+        color: #222;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5%;
+      }
+
+      nav a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #111;
+        font-weight: 500;
+      }
+
+      .container {
+        flex: 1;
+        padding: 2rem 5%;
+      }
+
+      h2 {
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      th,
+      td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background: #6c5ce7;
+        color: white;
+      }
+
+      td button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 8px;
+        background: #3498db;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      footer {
+        color: #000;
+        padding: 2rem;
+        text-align: center;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="pesquisar.html">Pesquisar</a>
+        <a href="cadastrar-item.html">Cadastrar Item</a>
+        <a href="gerenciar.html">Gerenciar</a>
+        <a href="solicitacao.html">Solicitação</a>
+        <a href="about.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html" class="sign-up">Cadastrar-se</a>
+        <a href="login.html" class="sign-in">Login</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>Gerenciar Solicitações</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Tipo</th>
+            <th>Status</th>
+            <th>Agendamento</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cadeira de madeira</td>
+            <td>Troca</td>
+            <td>Aguardando</td>
+            <td>10/05/2025 às 19:30</td>
+            <td><button>Ver Detalhes</button></td>
+          </tr>
+          <tr>
+            <td>Mesinha de madeira</td>
+            <td>Doação</td>
+            <td>Aguardando</td>
+            <td>—</td>
+            <td><button>Ver Detalhes</button></td>
+          </tr>
+          <tr>
+            <td>Abajur de madeira</td>
+            <td>Troca</td>
+            <td>Agendado</td>
+            <td>10/05/2025 às 19:30</td>
+            <td><button>Ver Detalhes</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <p>© 2025 IntegraTech_Arapoema • Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
