@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisar Itens | Doe ou Troque</title>
+    <link rel="icon" href="img/icon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #f8f8f8;
+        color: #222;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5%;
+      }
+
+      nav a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #111;
+        font-weight: 500;
+      }
+
+      .sign-up {
+        background: #111;
+        color: #fff;
+        padding: 0.6rem 1.2rem;
+        border-radius: 25px;
+        text-decoration: none;
+      }
+
+      .sign-in {
+        background: blue;
+        color: #fff;
+        padding: 0.6rem 1.2rem;
+        border-radius: 25px;
+        text-decoration: none;
+      }
+
+      .container {
+        flex: 1;
+        padding: 2rem 5%;
+      }
+
+      h2 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .input-group {
+        margin-bottom: 1rem;
+      }
+
+      .input-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      .input-group input,
+      .input-group select {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+
+      button {
+        background: #6c5ce7;
+        color: white;
+        border: none;
+        padding: 0.8rem;
+        border-radius: 8px;
+        width: 100%;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+      }
+
+      footer {
+        color: rgb(0, 0, 0);
+        padding: 2rem;
+        text-align: center;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="pesquisar.html">Pesquisar</a>
+        <a href="cadastrar-item.html">Cadastrar Item</a>
+        <a href="gerenciar.html">Gerenciar</a>
+        <a href="solicitacao.html">Solicitação</a>
+        <a href="about.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html" class="sign-up">Cadastrar-se</a>
+        <a href="login.html" class="sign-in">Login</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>Pesquisar Itens</h2>
+      <form>
+        <div class="input-group">
+          <label for="nome">Nome do item</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Ex: Geladeira"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="categoria">Categoria</label>
+          <select id="categoria" name="categoria">
+            <option value="">Selecione</option>
+            <option>Roupas</option>
+            <option>Móveis</option>
+            <option>Eletrodomésticos</option>
+            <option>Materiais Escolares</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="tipo">Tipo de transação</label>
+          <select id="tipo" name="tipo">
+            <option value="">Selecione</option>
+            <option>Doar</option>
+            <option>Trocar</option>
+          </select>
+        </div>
+
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 IntegraTech_Arapoema • Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
