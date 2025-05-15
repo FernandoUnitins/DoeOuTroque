@@ -1,1 +1,1 @@
-Sistema de gerenciamento de pessoas que permite o cadastro de indivíduos, a consulta de informações e a atualização de dados pessoais. Matéria do curso Programação Orientada a Objetos da Unitins.
+Sistema de gerenciamento de doações/troca de itens que permite o cadastro, edição, busca e gerenciamento de itens a serem doados ou trocados - Seminário Integrador.
